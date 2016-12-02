@@ -1,17 +1,23 @@
-h1. Signals: Think Outside the Event.
+h1. Signals: Think Outside the Event.（Signals ：事件之外来思考）
 
 *Signals* are light-weight, strongly-typed AS3 messaging tools.
 Wire your application with better APIs and less boilerplate than AS3 Events.
+*Signals* 是轻量，强壮型的AS3 通信工具。用更好的APIs和比AS3更少的引用通信你的应用。
 
-h2. Concept
+h2. Concept  （概念）
 
  * A *Signal* is essentially a mini-dispatcher specific to one event, with its own array of listeners.
+ * A *Signal* 本质上是一个带有自己监听器数组针对一个事件的迷你型分发器。
  * A Signal gives an event a concrete membership in a class. 
+ * A *Signal* 在一个类中为一个事件提供具体的成员。
  * Listeners subscribe to real objects, not to string-based channels.
+ * 监听器依附于一个真实的对象，不是字符串基础的通道了。
  * Event string constants are no longer needed.
- * Signals are inspired by "C# events":http://en.wikipedia.org/wiki/C_Sharp_syntax#Events and  "signals/slots":http://en.wikipedia.org/wiki/Signals_and_slots in Qt. 
+ * 不在需要一个事件字符常量了。
+ * Signals are inspired by "C# events":http://en.wikipedia.org/wiki/C_Sharp_syntax#Events and  "signals/slots":http://en.wikipedia.org/wiki/Signals_and_slots in Qt.
+ (灵感来源)
 
-h2. Syntax
+h2. Syntax （语法）
 
 <pre><code>// with EventDispatcher
 button.addEventListener(MouseEvent.CLICK, onClick);
